@@ -1,0 +1,93 @@
+register.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<title>Shopping Cart App</title>
+
+<script src="script.js"></script>
+</head>
+<body>
+<header>
+<div class="logo">
+            <imgsrc="logo.png" alt="Logo" />
+        </div>
+        <h1>Welcome to Our Shopping Cart</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html" class="active">Register</a>
+            <a href="catalog.html">Catalog</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+</header>
+<main>
+
+<input type="text" placeholder="Username" id="username"><br>
+<input type="email" placeholder="Email"><br>
+<input type="password" placeholder="Password" id="password"><br>
+<button type="submit" class="gradient-button" onclick="check()">Register</button>
+<p>Already have an account? <a href="login.html">Login here</a></p>
+
+</main>
+    <footer>
+        <p>&copy; 2025 Shopping Cart App | 
+        Follow us on 
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </p>
+    </footer>
+</body>
+</html>
+
+login.html
+<body>
+<header>
+<div class="logo">
+            <imgsrc="logo.png" alt="Logo" />
+        </div>
+        <h1>Welcome to Our Shopping Cart</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html" class="active">Login</a>
+            <a href="register.html">Register</a>
+            <a href="catalog.html">Catalog</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+</header>
+<main>
+<form class="form-container">
+<input type="text" placeholder="Username" id="username"> <br>
+<input type="password" placeholder="Password" id="password"><br>
+<button type="submit"class="gradient-button" onclick="check()">Login</button>
+<p>Don't have an account? <a href="register.html">Register here</a></p>
+</form>
+</main>
+    <footer>
+        <p>&copy; 2025 Shopping Cart App | Follow us on 
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </p>
+    </footer>
+
+</body>
+
+script.js
+function check(){
+    const user = document.getElementById("username").value
+    const pswd = document.getElementById("password").value
+    if(user.length<6){
+        alert("need to enter username greater than 6")
+    }
+    if(pswd.length<6){
+        alert("Enter password greater than 6")
+
+    }
+}
