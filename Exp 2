@@ -1,0 +1,102 @@
+Index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping Cart</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css"><!-- Your custom styles -->
+</head>
+<body>
+<div class="container mt-5">
+<h1 class="text-center">Shopping Cart</h1>
+<div class="row">
+<div class="col-md-8">
+<div class="card">
+<div class="card-header">
+<h5>Your Items</h5>
+</div>
+<div class="card-body">
+<!-- Example item -->
+<div class="row my-3">
+<div class="col-6">
+<h6>Product Name</h6>
+<p>Price: $10.00</p>
+</div>
+<div class="col-6 text-right">
+<button class="btnbtn-primary flat-button">Add to Cart</button>
+</div>
+</div>
+<!-- Add more products as needed -->
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h5>Checkout</h5>
+</div>
+<div class="card-body text-center">
+<button class="btnbtn-danger gradient-button">Checkout Now</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+styles.css
+/* Flat Button Styles */
+.flat-button {
+    padding: 12px 20px; /* Vertical and horizontal padding */
+    font-size: 16px; /* Font size */
+    color: white; /* Text color */
+    background-color: #007BFF; /* Button background color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for background and scale */
+}
+/* Hover effect */
+.flat-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+/* Active state */
+.flat-button:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+}
+/* Focus state for accessibility */
+.flat-button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Add a custom focus outline */
+}
+/* Gradient Button Styles */
+.gradient-button {
+    padding: 12px 20px; /* Vertical and horizontal padding */
+    font-size: 16px; /* Font size */
+    color: white; /* Text color */
+    background: linear-gradient(90deg, #FF5733, #C70039); /* Gradient background */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s, transform 0.2s; /* Smooth transition for background and scale */
+}
+/* Hover effect */
+.gradient-button:hover {
+    background: linear-gradient(90deg, #C70039, #FF5733); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+/* Active state */
+.gradient-button:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+}
+/* Focus state for accessibility */
+.gradient-button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(255, 87, 51, 0.5); /* Add a custom focus outline */
+}
